@@ -1,0 +1,43 @@
+{
+    "name": "leanadmin/console-log",
+    "description": "consoleLog() for Livewire components",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Lean\\ConsoleLog\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Lean\\ConsoleLog\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Samuel Štancl",
+            "email": "samuel.stancl@gmail.com"
+        }
+    ],
+    "require": {
+        "livewire/livewire": "^2.3",
+        "illuminate/view": "^8.20|^9.0"
+    },
+    "require-dev": {
+        "pestphp/pest": "^1.0",
+        "illuminate/support": "^8.20|^9.0",
+        "pestphp/pest-plugin-laravel": "^1.0",
+        "illuminate/testing": "^8.20|^9.0",
+        "orchestra/testbench": "^6.7|^7.0",
+        "pestphp/pest-plugin-livewire": "^1.1"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Lean\\ConsoleLog\\ConsoleLogServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
